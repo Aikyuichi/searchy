@@ -1,16 +1,17 @@
-# example
+# searchy_example
 
-A new Flutter project.
+An example application demonstrating how to use the `searchy` Flutter package.
 
-## Getting Started
+## Features Demonstrated
 
-This project is a starting point for a Flutter application.
+- **SearchyScaffold**: Manages the screen layout and automatically toggles between the main content and search results.
+- **SearchyBar**: Embedded search app bar with inline placement.
+- **SearchyField.filled**: Pill-shaped filled search input field with live query callbacks.
 
-A few resources to get you started if this is your first Flutter project:
+## Running the Example
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+From the `example` directory, run:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter run
+```
