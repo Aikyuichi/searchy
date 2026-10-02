@@ -7,7 +7,6 @@ export 'searchy_field.dart';
 ///
 /// Used by [SearchyBar] through its [SearchyBar.placement] property.
 enum SearchyBarPlacement {
-
   /// Displays the search field directly in the AppBar title area.
   ///
   /// This is the default placement.
@@ -43,7 +42,6 @@ enum SearchyBarPlacement {
 /// )
 /// ```
 class SearchyBar extends StatefulWidget implements PreferredSizeWidget {
-
   /// A widget displayed before the title.
   final Widget? leading;
 
@@ -203,7 +201,8 @@ class SearchyBar extends StatefulWidget implements PreferredSizeWidget {
   /// widget height when present.
   @override
   Size get preferredSize {
-    return Size.fromHeight((toolbarHeight ?? kToolbarHeight) + (bottom?.preferredSize.height ?? 0));
+    return Size.fromHeight((toolbarHeight ?? kToolbarHeight) +
+        (bottom?.preferredSize.height ?? 0));
   }
 }
 

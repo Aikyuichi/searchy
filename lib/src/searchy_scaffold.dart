@@ -25,7 +25,6 @@ export 'searchy_bar.dart';
 /// )
 /// ```
 class SearchyScaffold extends StatefulWidget {
-
   /// The app bar displayed at the top of the screen.
   ///
   /// If omitted, a default [SearchyBar] is created.

@@ -27,7 +27,6 @@ import 'package:flutter/material.dart';
 /// * [SearchyBar], for embedding a search field inside an AppBar.
 /// * [SearchyScaffold], for building search-oriented screens.
 class SearchyField extends StatefulWidget {
-
   /// Controls the text being edited.
   ///
   /// If null, an internal controller is created automatically.
@@ -212,10 +211,7 @@ class _SearchyFieldState extends State<SearchyField> {
         focusNode: widget.focusNode,
         decoration: InputDecoration(
           border: widget.border,
-          prefixIcon: Icon(
-              Icons.search,
-              color: widget.style?.color
-          ),
+          prefixIcon: Icon(Icons.search, color: widget.style?.color),
           labelText: widget.labelText,
           labelStyle: widget.style ?? widget.labelStyle,
           hintText: widget.hintText,
@@ -235,7 +231,9 @@ class _SearchyFieldState extends State<SearchyField> {
   Widget _clearButton() {
     return IconButton(
       icon: const Icon(Icons.clear),
-      color: _controller?.text.isNotEmpty ?? false ? widget.style?.color?.withAlpha(150) : Colors.transparent,
+      color: _controller?.text.isNotEmpty ?? false
+          ? widget.style?.color?.withAlpha(150)
+          : Colors.transparent,
       onPressed: () {
         _controller?.clear();
         widget.onChanged?.call('');
