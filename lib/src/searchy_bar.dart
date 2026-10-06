@@ -267,7 +267,7 @@ class _SearchyBarState extends State<SearchyBar> {
 
   Widget? _buildTitle() {
     Widget? titleWidget;
-    if (_toggle) {
+    if (widget.placement == SearchyBarPlacement.inline || _toggle) {
       titleWidget = _buildSearchyField();
     } else {
       titleWidget = widget.title;

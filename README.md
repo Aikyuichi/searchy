@@ -14,8 +14,9 @@ A flexible and customizable search widget library for Flutter. `searchy` makes i
 
 Add `searchy` to your `pubspec.yaml`:
 
-```bash
-flutter pub add searchy
+```yaml
+dependencies:
+  searchy: ^0.2.0
 ```
 
 Import the package in your Dart code:
@@ -42,13 +43,23 @@ SearchyField(
 )
 ```
 
-Or use the pill-shaped filled variant:
+Or use a variant:
 
 ```dart
 SearchyField.filled(
   hintText: 'Search...',
   fillColor: Colors.grey.shade200,
   borderRadius: 20,
+)
+
+SearchyField.outlined(
+  hintText: 'Search outlined...',
+  focusedBorderColor: Colors.indigo,
+)
+
+SearchyField.elevated(
+  hintText: 'Search elevated...',
+  elevation: 2.0,
 )
 ```
 
@@ -75,7 +86,7 @@ Displays a search icon in the actions area that toggles the search field visibil
 SearchyBar(
   title: const Text('My App'),
   placement: SearchyBarPlacement.action,
-  field: SearchyField(
+  field: SearchyField.filled(
     hintText: 'Search...',
   ),
   onToggleSearch: (visible) {
@@ -89,9 +100,10 @@ Displays the search field in the bottom area of the `AppBar`:
 
 ```dart
 SearchyBar(
+  toolbarHeight: 100,
   title: const Text('Catalog'),
   placement: SearchyBarPlacement.bottom,
-  field: SearchyField(
+  field: SearchyField.filled(
     hintText: 'Search items...',
   ),
 )
@@ -127,6 +139,8 @@ SearchyScaffold(
   ),
 )
 ```
+
+Check out the [sample project](https://github.com/Aikyuichi/searchy/tree/main/example) to showcase all style variants and bar placements.
 
 ## License
 

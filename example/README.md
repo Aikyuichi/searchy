@@ -1,17 +1,23 @@
 # searchy_example
 
-An example application demonstrating how to use the `searchy` Flutter package.
+An interactive example application demonstrating the capabilities and customization options of the `searchy` Flutter package.
 
 ## Features Demonstrated
 
-- **SearchyScaffold**: Manages the screen layout and automatically toggles between the main content and search results.
-- **SearchyBar**: Embedded search app bar with inline placement.
-- **SearchyField.filled**: Pill-shaped filled search input field with live query callbacks.
+- **SearchyScaffold**: Manages screen layout, auto-dismisses keyboard focus on tap outside, and smoothly toggles between main content and search results (`body` vs `resultBody`).
+- **SearchyBar Placements**: Switch dynamically between `inline`, `action`, and `bottom` search placements in the AppBar.
+- **SearchyField Variants**: Switch dynamically between different search input styles:
+  - `SearchyField` (Basic)
+  - `SearchyField.filled` (Pill-shaped filled container)
+  - `SearchyField.outlined` (Custom outlined borders)
+  - `SearchyField.elevated` (Elevated with shadow)
 
 ## Running the Example
 
-From the `example` directory, run:
+1. Ensure you are in the root or `example` directory.
+2. Run the app on your preferred device or emulator:
 
 ```bash
+cd example
 flutter run
 ```

@@ -1,6 +1,6 @@
 name: searchy
 description: A customizable Flutter search widget library providing search bars, fields, and scaffolds with flexible placement and search state management.
-version: 0.1.0
+version: 0.2.0
 homepage: https://github.com/Aikyuichi/searchy
 
 environment:
